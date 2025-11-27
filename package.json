@@ -1,0 +1,18 @@
+{
+    "name": "lunalean",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "install:all": "cd pv && npm install && cd ../lunalean10 && npm install",
+        "build": "npm run build:landing && npm run build:app",
+        "build:landing": "cd pv && npm run build",
+        "build:app": "cd lunalean10 && npm run build",
+        "dev:landing": "cd pv && npm run dev",
+        "dev:app": "cd lunalean10 && npm run dev"
+    },
+    "description": "LunaLean - Programa de Detox de 28 Dias",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/usdigital702/lunalean10_final.git"
+    }
+}
