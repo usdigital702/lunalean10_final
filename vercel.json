@@ -1,34 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "pv/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    },
-    {
-      "src": "lunalean10/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "^/(?!app).*",
-      "headers": {
-        "Host": "lunalean.com"
-      },
-      "dest": "/pv/$0"
-    },
-    {
-      "src": "/app/(.*)",
-      "dest": "/lunalean10/$1"
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
